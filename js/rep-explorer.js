@@ -1,10 +1,10 @@
 const repetitions = [
-  { down: 0.467, up: 0.533, total: 1.000, consistency: 0.862 },
-  { down: 0.367, up: 0.533, total: 0.900, consistency: 0.863 },
+  { down: 0.467, up: 0.533, total: 1.0, consistency: 0.862 },
+  { down: 0.367, up: 0.533, total: 0.9, consistency: 0.863 },
   { down: 0.467, up: 0.567, total: 1.033, consistency: 0.903 },
-  { down: 0.500, up: 0.533, total: 1.033, consistency: 0.926 },
-  { down: 1.033, up: 0.867, total: 1.900, consistency: 0.758 },
-  { down: 1.067, up: 1.000, total: 2.067, consistency: 0.728 },
+  { down: 0.5, up: 0.533, total: 1.033, consistency: 0.926 },
+  { down: 1.033, up: 0.867, total: 1.9, consistency: 0.758 },
+  { down: 1.067, up: 1.0, total: 2.067, consistency: 0.728 },
 ];
 
 const slider = document.querySelector("#rep-slider");
