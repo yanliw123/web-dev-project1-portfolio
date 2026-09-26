@@ -46,6 +46,10 @@ npm run lint
 - [User personas and user stories](02_User_Personas_and_User_Stories.pdf)
 - [Design mockups](03_Design_Mockups.pdf)
 
+## License
+
+The original website code is available under the [MIT License](LICENSE). Project figures are shown as portfolio examples and remain attributed to their source projects.
+
 ## Generative AI use
 
-I used **OpenAI Codex, based on the GPT-6 sol model **, to help draft the design documents, revised and debugged the portfolio's HTML/CSS/JavaScript. 
+I used **OpenAI Codex, based on the GPT-6 sol model**, to help draft the design documents and to revise and debug the portfolio's HTML/CSS/JavaScript.
