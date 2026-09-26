@@ -32,16 +32,38 @@
         </ul>
       </section>
 
+      <section class="project-details" aria-labelledby="contribution-heading">
+        <h2 id="contribution-heading">My contribution and team roles</h2>
+        <p>I built the TF-IDF and logistic regression baseline, worked on LLM-assisted and manual comment annotation, created baseline graphs, and compared results across channels. Zheyu Deng focused on data collection and cleaning and on fine-tuning the transformer models. We developed the annotation guidelines and interpreted the findings together.</p>
+      </section>
+
+      <section class="project-details" aria-labelledby="comparison-heading">
+        <h2 id="comparison-heading">Model comparison</h2>
+        <p>TF-IDF + logistic regression uses word and character patterns, while RoBERTa also captures context. On the 50-video evaluation set, their Pearson correlations with like rate were about <strong>0.16</strong> and <strong>0.30</strong>, respectively.</p>
+      </section>
+
       <section class="project-details" aria-labelledby="results-heading">
         <h2 id="results-heading">Results</h2>
-        <p>We manually labeled <strong>1,000 comments</strong>. In a separate evaluation of <strong>50 MrBeast videos</strong>, the RoBERTa-based positive comment ratio had a modest positive correlation with like rate (<strong>Pearson r ≈ 0.30</strong>).</p>
+        <p>We manually labeled <strong>1,000 comments</strong>.</p>
+        <p id="result-summary" aria-live="polite">For 50 MrBeast videos, the RoBERTa-based positive comment ratio had a modest positive correlation with like rate (Pearson r ≈ 0.30).</p>
         <figure class="project-figure">
-          <img src="images/nlp-roberta-correlation.png" width="740" height="476" alt="Scatterplot of positive comment ratio versus video like rate across 50 MrBeast videos, with a modest upward trend and Pearson correlation of 0.299." />
-          <figcaption>RoBERTa predictions across 50 videos. Figure from our final project report.</figcaption>
+          <img id="result-image" src="images/nlp-roberta-correlation.png" width="740" height="476" alt="RoBERTa scatterplot of positive comment ratio versus like rate for 50 videos; Pearson r is 0.299." />
+          <figcaption id="result-caption">RoBERTa result (Pearson r ≈ 0.30). Figure from our final report.</figcaption>
         </figure>
-        <p>overall, top-liked comment sentiment carries a meaningfulbut limited signal</p>
+        <div class="result-options" role="group" aria-label="Choose a model result">
+          <button class="result-option" type="button" data-model="tfidf" aria-pressed="false">
+            <img src="images/nlp-tfidf-correlation.png" width="740" height="476" alt="" />
+            <span>TF-IDF + logistic regression</span>
+          </button>
+          <button class="result-option" type="button" data-model="roberta" aria-pressed="true">
+            <img src="images/nlp-roberta-correlation.png" width="740" height="476" alt="" />
+            <span>RoBERTa</span>
+          </button>
+        </div>
+        <p>Overall, top-liked comment sentiment carries a meaningful but limited signal; the correlation does not establish causation.</p>
         <p><a href="https://github.com/ZheyuDeng/nlp-project">View the project code on GitHub</a></p>
       </section>
     </main>
+    <script type="module" src="js/model-toggle.js"></script>
   </body>
 </html>

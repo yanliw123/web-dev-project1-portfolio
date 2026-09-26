@@ -91,3 +91,39 @@ h1 {
   color: #526071;
   font-size: 0.9rem;
 }
+
+.result-options {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.result-option {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  background: white;
+  border: 1px solid #dde4eb;
+  border-radius: 8px;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.result-option img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.result-option span {
+  display: block;
+  margin-top: 8px;
+}
+
+.result-option:hover,
+.result-option:focus-visible,
+.result-option[aria-pressed="true"] {
+  border-color: #245a91;
+}
