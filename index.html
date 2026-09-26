@@ -3,18 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yanli Wang" />
+    <meta name="description" content="Yanli Wang's computer science portfolio featuring NLP and computer vision projects." />
     <title>Home | Yanli Wang</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav aria-label="Main navigation">
-      <a href="index.html" aria-current="page">Home</a> |
-      <a href="nlp.html">NLP Project</a> |
-      <a href="vision.html">Computer Vision Project</a>
-    </nav>
-    <main>
-      <h1>Yanli Wang</h1>
-      <p>Master's student in Computer Science.</p>
-      <p>Welcome to my portfolio. Choose a project above to learn more.</p>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="nlp.html">NLP Project</a>
+        <a href="vision.html">Computer Vision Project</a>
+      </nav>
+    </header>
+    <main class="page-content">
+      <section class="intro" aria-labelledby="intro-heading">
+        <h1 id="intro-heading">Hi, I'm Yanli Wang.</h1>
+        <p>I'm a master's student in Computer Science at Northeastern University.</p>
+      </section>
+      <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="project-list">
+          <article class="project-card">
+            <h3>NLP Project</h3>
+            <p>Exploring how the sentiment of YouTube comments relates to video like rates.</p>
+            <a href="nlp.html">View NLP project</a>
+          </article>
+          <article class="project-card">
+            <h3>Computer Vision Project</h3>
+            <p>Recognizing human movements in video with pose tracking.</p>
+            <a href="vision.html">View computer vision project</a>
+          </article>
+        </div>
+      </section>
     </main>
   </body>
 </html>

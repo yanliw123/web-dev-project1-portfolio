@@ -3,17 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yanli Wang" />
+    <meta name="description" content="A natural language processing project exploring YouTube comment sentiment and video like rates." />
     <title>NLP Project | Yanli Wang</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a> |
-      <a href="nlp.html" aria-current="page">NLP Project</a> |
-      <a href="vision.html">Computer Vision Project</a>
-    </nav>
-    <main>
-      <h1>NLP Project</h1>
-      <p>Analyzing YouTube comment sentiment and its relationship with video like rates.</p>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="nlp.html" aria-current="page">NLP Project</a>
+        <a href="vision.html">Computer Vision Project</a>
+      </nav>
+    </header>
+    <main class="page-content project-page">
+      <section class="intro" aria-labelledby="project-heading">
+        <h1 id="project-heading">YouTube Comment Sentiment</h1>
+        <p>A CS 6120 team project by Yanli Wang and Zheyu Deng.</p>
+        <p>We studied whether the sentiment of top-liked comments relates to a video's like rate (likes divided by views).</p>
+      </section>
+
+      <section class="project-details" aria-labelledby="approach-heading">
+        <h2 id="approach-heading">What we did</h2>
+        <ul>
+          <li>Collected video statistics and comments, then labeled comments as positive, neutral, or negative.</li>
+          <li>Compared a TF-IDF baseline with a RoBERTa sentiment model.</li>
+          <li>Combined comment predictions for each video and compared them with its like rate.</li>
+        </ul>
+      </section>
+
+      <section class="project-details" aria-labelledby="results-heading">
+        <h2 id="results-heading">Results</h2>
+        <p>We manually labeled <strong>1,000 comments</strong>. In a separate evaluation of <strong>50 MrBeast videos</strong>, the RoBERTa-based positive comment ratio had a modest positive correlation with like rate (<strong>Pearson r ≈ 0.30</strong>).</p>
+        <figure class="project-figure">
+          <img src="images/nlp-roberta-correlation.png" width="740" height="476" alt="Scatterplot of positive comment ratio versus video like rate across 50 MrBeast videos, with a modest upward trend and Pearson correlation of 0.299." />
+          <figcaption>RoBERTa predictions across 50 videos. Figure from our final project report.</figcaption>
+        </figure>
+        <p>overall, top-liked comment sentiment carries a meaningfulbut limited signal</p>
+        <p><a href="https://github.com/ZheyuDeng/nlp-project">View the project code on GitHub</a></p>
+      </section>
     </main>
   </body>
 </html>
