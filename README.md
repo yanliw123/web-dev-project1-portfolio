@@ -52,4 +52,8 @@ The website is available under the [MIT License](LICENSE).
 
 ## Generative AI use
 
-I used **OpenAI Codex, based on the GPT-6 sol model**, to help draft the design documents and to revise and debug the portfolio's HTML/CSS/JavaScript.
+I used **OpenAI Codex, based on the GPT-6 sol model**, to help draft the design documents and to revise and debug the portfolio's HTML/CSS/JavaScript. 
+
+- "Please review and debug my current code. Check for errors and make minimal fixes while keeping the existing design."
+- "Please generate the project page for my portfolio while keeping the visual style consistent with the other two pages."
+- "Please add a creative interactive feature: a slider that lets visitors view the data for different squat repetitions."
