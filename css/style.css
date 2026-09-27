@@ -111,6 +111,104 @@ h1 {
   margin-top: 0;
 }
 
+.life-card {
+  flex-basis: 200px;
+}
+
+.life-games {
+  flex-basis: 100%;
+}
+
+.life-climbing {
+  flex: 2 1 500px;
+}
+
+.life-snowboarding {
+  flex: 1 1 250px;
+}
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.game-list li {
+  display: flex;
+  flex: 1 1 180px;
+  align-items: center;
+  gap: 10px;
+}
+
+.game-icon {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.life-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.life-gallery figure {
+  margin: 0;
+}
+
+.life-gallery figcaption {
+  margin-top: 6px;
+  color: #526071;
+  font-size: 0.85rem;
+}
+
+.life-photo {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.life-photo-xray {
+  object-fit: contain;
+  background: #101214;
+}
+
+.life-photo-snowboarding {
+  height: 360px;
+  object-position: center 65%;
+}
+
+.safety-note {
+  padding: 10px;
+  background: #eaf2f9;
+  border-left: 3px solid #245a91;
+}
+
+@media (max-width: 520px) {
+  .game-list {
+    display: grid;
+  }
+
+  .life-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-section {
+  margin: 48px 0;
+  padding-top: 28px;
+  border-top: 1px solid #dde4eb;
+}
+
+.project-section h2 {
+  margin-top: 0;
+}
+
 .project-details {
   max-width: 760px;
   margin-bottom: 36px;

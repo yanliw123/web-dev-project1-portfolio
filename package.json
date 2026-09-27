@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "format": "prettier --write index.html nlp.html vision.html css/style.css js/*.js package.json eslint.config.js",
-    "format:check": "prettier --check index.html nlp.html vision.html css/style.css js/*.js package.json eslint.config.js",
+    "format": "prettier --write *.html css/style.css js/*.js package.json eslint.config.js",
+    "format:check": "prettier --check *.html css/style.css js/*.js package.json eslint.config.js",
     "lint": "eslint ."
   },
   "devDependencies": {

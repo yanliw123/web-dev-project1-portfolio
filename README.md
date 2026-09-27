@@ -6,7 +6,7 @@
 
 ## Project objective
 
-This portfolio introduces my background as a computer science master's student and presents two projects through short, evidence-based case studies. Visitors can move between three pages to learn what each project does, see results, and understand my contribution. The site is a static front-end project built with HTML5, CSS3, and JavaScript ES6 modules; it has no backend or component library.
+This portfolio introduces my education, experience, projects, and interests. Visitors can move between Home, Projects, and Life; the Projects page brings together two short case studies with interactive results. The site is a static front-end project built with HTML5, CSS3, and JavaScript ES6 modules; it has no backend or component library.
 
 ## Screenshot
 
@@ -14,9 +14,9 @@ This portfolio introduces my background as a computer science master's student a
 
 ## Pages and features
 
-- **[Home](index.html):** Introduction, contact email, and links to both projects. Each project card reveals an emoji-and-label popup on hover or keyboard focus; the popups stay visible on touch devices.
-- **[NLP project](nlp.html):** YouTube comment sentiment study, my contribution, model comparison, results, and a link to the [project repository](https://github.com/ZheyuDeng/nlp-project). Hovering over, focusing, or clicking a model option changes the result figure and explanation.
-- **[Computer vision project](vision.html):** MediaPipe pose-tracking and squat-analysis case study. A slider lets visitors inspect the down time, up time, total time, and consistency of each of six recorded squat repetitions. This is the third, AI-assisted page.
+- **[Home](index.html):** Education, experience, skills, contact email, and links to both projects. Each project card reveals an emoji-and-label popup on hover or keyboard focus; the popups stay visible on touch devices.
+- **[Projects](projects.html):** The AI-assisted page combines the YouTube comment sentiment and computer vision case studies. Visitors can switch between NLP model results and inspect the timing of six squat repetitions with a slider.
+- **[Life](life.html):** My interests outside computing, with game icons, personal climbing and snowboarding photos, an X-ray, and a climbing safety note.
 
 The charts and measurements come from the projects' final reports and saved outputs. The squat explorer uses values from the CS5330 project's squat-analysis CSV outputs; it does not run live pose estimation.
 
@@ -28,7 +28,7 @@ No build step is required. From the project folder, start a static server:
 python -m http.server 8000
 ```
 
-Open <http://127.0.0.1:8000/index.html>. The three pages also work as static files on a hosting service such as GitHub Pages.
+Open <http://127.0.0.1:8000/index.html>. The three main pages also work as static files on a hosting service such as GitHub Pages.
 
 To install the development tools and run the formatting and lint checks:
 
@@ -38,7 +38,7 @@ npm run format:check
 npm run lint
 ```
 
-`npm run format` applies Prettier formatting if you edit the source. `package.json` lists the development dependencies; the website itself has no runtime npm dependencies. HTML can be checked with the [W3C HTML Checker](https://validator.w3.org/nu/). The three pages had zero errors and zero warnings in the local-file check on September 26, 2026.
+`npm run format` applies Prettier formatting if you edit the source. `package.json` lists the development dependencies; the website itself has no runtime npm dependencies. HTML can be checked with the [W3C HTML Checker](https://validator.w3.org/nu/).
 
 ## Design documents
 
@@ -48,7 +48,7 @@ npm run lint
 
 ## License
 
-The original website code is available under the [MIT License](LICENSE). Project figures are shown as portfolio examples and remain attributed to their source projects.
+The website is available under the [MIT License](LICENSE).
 
 ## Generative AI use
 
